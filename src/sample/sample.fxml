@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="264.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="263.0" prefWidth="589.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="labelStroka" layoutX="34.0" layoutY="32.0" prefHeight="25.0" prefWidth="577.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelStroka2" layoutX="34.0" layoutY="57.0" prefHeight="25.0" prefWidth="518.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelStroka3" layoutX="34.0" layoutY="82.0" prefHeight="25.0" prefWidth="538.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelStroka4" layoutX="34.0" layoutY="107.0" prefHeight="25.0" prefWidth="538.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="doSkolki_ID" layoutX="28.0" layoutY="222.0" prefHeight="32.0" prefWidth="518.0" promptText="Введите число, до скольки надо сосчитать" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="113.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <VBox layoutX="502.0" layoutY="7.0" prefHeight="171.0" prefWidth="103.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="7.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" onAction="#action_1mln" text="1 млн">
+                     <opaqueInsets>
+                        <Insets bottom="15.0" />
+                     </opaqueInsets>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="listt" />
+                     </toggleGroup>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" onAction="#action_10mln" text="10 млн" toggleGroup="$listt">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin></RadioButton>
+                  <RadioButton mnemonicParsing="false" onAction="#action_100mln" text="100 млн" toggleGroup="$listt">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin></RadioButton>
+                  <RadioButton mnemonicParsing="false" onAction="#action_1mlrd" text="1 млрд" toggleGroup="$listt">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin></RadioButton>
+                  <RadioButton mnemonicParsing="false" onAction="#action_10mlrd" text="10 млрд" toggleGroup="$listt">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin></RadioButton>
+                  <RadioButton mnemonicParsing="false" onAction="#action_100mlrd" text="100 млрд" toggleGroup="$listt" />
+               </children>
+            </VBox>
+            <Button layoutX="242.0" layoutY="231.0" mnemonicParsing="false" onAction="#Knopka_ochistit" prefHeight="25.0" prefWidth="126.0" text="Очистить поле" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="243.0" />
+            <Button defaultButton="true" layoutX="106.0" layoutY="231.0" mnemonicParsing="false" onAction="#Knopka" prefHeight="25.0" prefWidth="73.0" text="Сосчитать" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="106.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
