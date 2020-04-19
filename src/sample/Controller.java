@@ -18,8 +18,8 @@ public class Controller {
         for (; i < o; i++) {
             System.currentTimeMillis();
             }
-            labelStroka.setText("Выполнено за: " + ((double) System.currentTimeMillis() - t) / 1000 + " секунд");
-            labelStroka2.setText("Или за: " + ((double) System.currentTimeMillis() - t) / 1000 / 60 + " минут");
+            labelStroka.setText("Выполнено за: " + ((double) System.currentTimeMillis() - t) / 1000 + " сек.");
+            labelStroka2.setText("Или за: " + ((double) System.currentTimeMillis() - t) / 1000 / 60 + " мин.");
             if (o==1000000) {
                 labelStroka3.setText("Сосчитание от 0 до 1 миллиона");
             }
@@ -53,26 +53,26 @@ public class Controller {
     }
 
     public void action_1mln(ActionEvent actionEvent) {
-        doSkolki_ID.setText("1000000");
+        doSkolki_ID.setText("1000000"); labelStroka.setText("От нуля до 1 млн.");
     }
 
     public void action_10mln(ActionEvent actionEvent) {
-        doSkolki_ID.setText("10000000");
+        doSkolki_ID.setText("10000000"); labelStroka.setText("От нуля до 10 млн.");
     }
 
     public void action_100mln(ActionEvent actionEvent) {
-        doSkolki_ID.setText("100000000");
+        doSkolki_ID.setText("100000000"); labelStroka.setText("От нуля до 100 млн.");
     }
 
     public void action_1mlrd(ActionEvent actionEvent) {
-        doSkolki_ID.setText("1000000000");
+        doSkolki_ID.setText("1000000000");labelStroka.setText("От нуля до 1 млрд.");
     }
 
     public void action_10mlrd(ActionEvent actionEvent) {
-        doSkolki_ID.setText("10000000000");
+        doSkolki_ID.setText("10000000000");labelStroka.setText("От нуля до 10 млрд.");
     }
 
     public void action_100mlrd(ActionEvent actionEvent) {
-        doSkolki_ID.setText("100000000000");
+        doSkolki_ID.setText("100000000000");labelStroka.setText("От нуля до 100 млрд.");
     }
 }
